@@ -21,7 +21,10 @@ When ready to upload changes:
 
 • Save and Close out of unity.
 
-• Inside of GitHub desktop, create a summary and description, make sure all changes are checked. Make folders like Library are not added.
+• Inside of GitHub desktop, create a summary and description, make sure all changes are checked.
+
+//////MAKE SURE THAT FOLDERS SUCH AS LIBRARY, TEMP, BUILD, LOGS, USERSETTINGS, ETC HAVE NOT BEEN CHECKED OR IMPORTED. 
+These files need to stay local which the .gitignore should be doing.///////
 
 • Click commit to master.
 
