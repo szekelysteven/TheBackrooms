@@ -59,6 +59,13 @@
         },
         {
             "userAdded": false,
+            "type": "UnityEngine.LightingSettings",
+            "ignore": false,
+            "defaultInstantiationMode": 0,
+            "supportsModification": true
+        },
+        {
+            "userAdded": false,
             "type": "UnityEngine.Material",
             "ignore": false,
             "defaultInstantiationMode": 0,
