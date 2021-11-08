@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         playerTransform = this.transform;
         elapsedTime = 0;
         rb = gameObject.GetComponent<Rigidbody>();
-        Debug.Log(allEnemyTransforms.Length);
+        //Debug.Log(allEnemyTransforms.Length);
         //rayDirection.Length = allEnemyTransforms.Length;
     }
 
@@ -114,8 +114,8 @@ public class PlayerController : MonoBehaviour
                     if (hit.collider.tag == "Enemy")
                     {
                         enemyLastSeenTime = elapsedTime;
-                        Debug.Log(hit.collider.tag);
-                        Debug.Log("EnemyDetected");
+                        //Debug.Log(hit.collider.tag);
+                        //Debug.Log("EnemyDetected");
                         hit.collider.SendMessage("detected", true);
 
                     }
