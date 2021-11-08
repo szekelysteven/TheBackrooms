@@ -75,7 +75,7 @@ public class EnemyController : FiniteStateMachineAbstractClass
         elapsedTime += Time.deltaTime;
   
     }
-
+    //*****************************************************CHASE STATE**************************************************************
     protected void UpdateChaseState()
     {
         agent.Resume();
@@ -102,10 +102,10 @@ public class EnemyController : FiniteStateMachineAbstractClass
         }
 
         //check distance to player, if close enough transition to attacking
-        if (distance <= 3.0f)
+        if (distance <= 5.0f)
         {
            
-            attackTime = elapsedTime + 3.0f;
+            attackTime = elapsedTime + 1.0f;
             currentState = EnemyState.Attack;
         }
 
@@ -121,7 +121,7 @@ public class EnemyController : FiniteStateMachineAbstractClass
         
         
         
-        
+    //********************************************************IDLE STATE**************************************************************
    protected void UpdateIdleState()
     {
         agent.Stop();
@@ -130,9 +130,10 @@ public class EnemyController : FiniteStateMachineAbstractClass
          currentState = EnemyState.Chase;
        }
     }
-
+    //********************************************************ATTACK STATE*************************************************************
     protected void UpdateAttackState()
     {
+        agent.Stop();
         distance = Vector3.Distance(transform.position, playerTransform.position);
         
 
@@ -141,6 +142,7 @@ public class EnemyController : FiniteStateMachineAbstractClass
         {
             GameObject.Find("Player").GetComponent<PlayerController>().playerHealth -= 20.0f;
             attackTime = elapsedTime + 1.0f;
+            GetComponent<AudioSource>().Play();
         }
 
 
