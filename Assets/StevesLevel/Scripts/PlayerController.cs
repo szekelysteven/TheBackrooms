@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
 
     public void Dead()
     {
-        SceneManager.LoadScene("StevesLevelMilestone2");
+        SceneManager.LoadScene("Grace&Mercy2");
     }
 
     public void SightUpdate()

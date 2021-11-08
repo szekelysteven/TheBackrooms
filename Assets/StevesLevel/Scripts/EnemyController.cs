@@ -1,15 +1,18 @@
 //Written using Unity Using Aritifical Intelligence Fourth Edition from Game 445.
 
 //Initially written for enemies on Kevin's level. Enemies should freeze when looked at by player, and slowly chase player after
-//not being looked at for a set amount of time. This is a simple FSM that doesnt really make use of Unity's built in FSM capabilities since the
-//enemy states are limited.
+//not being looked at for a set amount of time. This is a simple FSM.
 
 //11/7/2021
-//updated with for loops and arrays to handle multiple enemies.
+//added for loops to fill arrays ,made arrays for enemy objects and enemy transforms to handle multiple enemies. now sends messages throughn raycast.
+
+//11/8/2021
+//adding navmesh functionality
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyController : FiniteStateMachineAbstractClass
 {
@@ -21,6 +24,8 @@ public class EnemyController : FiniteStateMachineAbstractClass
         Attack,
     }
 
+
+    public NavMeshAgent agent;
     public EnemyState currentState;
     private float currentSpeed;
     private float currentRotationSpeed;
@@ -36,6 +41,8 @@ public class EnemyController : FiniteStateMachineAbstractClass
     //Starts the state machine
     protected override void Initialize()
     {
+        agent = GetComponent<NavMeshAgent>();
+
         currentState = EnemyState.Chase;
         currentSpeed = 1.0f;
         currentRotationSpeed = 50.0f;
@@ -71,6 +78,7 @@ public class EnemyController : FiniteStateMachineAbstractClass
 
     protected void UpdateChaseState()
     {
+        agent.Resume();
         //checks distance to player, if close enough attacks.  
         //if player looks at enemy, goes idle.
 
@@ -82,16 +90,15 @@ public class EnemyController : FiniteStateMachineAbstractClass
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * currentRotationSpeed);
 
         //move towards player
-        transform.Translate(Vector3.forward * Time.deltaTime * currentSpeed);
+        //transform.Translate(Vector3.forward * Time.deltaTime * currentSpeed);
+        agent.destination = destinationPosition;
 
-
-        //TO DO: need code from player on wether it can detect enemy or not in raycast. 
-        //TO DO: needs to send over command to set inPlayerVision to true.
 
         //Transition states if seen by player
         if (inPlayerVision == true)
         {
             currentState = EnemyState.Idle;
+
         }
 
         //check distance to player, if close enough transition to attacking
@@ -117,6 +124,7 @@ public class EnemyController : FiniteStateMachineAbstractClass
         
    protected void UpdateIdleState()
     {
+        agent.Stop();
        if (inPlayerVision == false)
        {
          currentState = EnemyState.Chase;
@@ -131,8 +139,8 @@ public class EnemyController : FiniteStateMachineAbstractClass
         //reduces players health over time while being touched
         if (elapsedTime >= attackTime)
         {
-            GameObject.Find("Player").GetComponent<PlayerController>().playerHealth -= 5.0f;
-            attackTime = elapsedTime + 3.0f;
+            GameObject.Find("Player").GetComponent<PlayerController>().playerHealth -= 20.0f;
+            attackTime = elapsedTime + 1.0f;
         }
 
 
@@ -140,7 +148,11 @@ public class EnemyController : FiniteStateMachineAbstractClass
         {
             currentState = EnemyState.Chase;
         }
-    //transition to idle when player detects enemy
+        if (distance <= 3.0f)
+        {
+            currentState = EnemyState.Attack;
+        }
+        //transition to idle when player detects enemy
         if (inPlayerVision == true)
         {
             currentState = EnemyState.Idle;
