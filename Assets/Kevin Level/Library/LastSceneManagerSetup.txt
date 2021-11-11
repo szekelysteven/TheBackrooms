@@ -1,0 +1,6 @@
+sceneSetups:
+- path: E:/TheBackrooms-5519834f6a5d570b548e94c8b6c599801628fad3/TheBackrooms-5519834f6a5d570b548e94c8b6c599801628fad3/Assets/Kevin
+    Level/The Backrooms dept store/Assets/Scenes/Grace&Mercy.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
