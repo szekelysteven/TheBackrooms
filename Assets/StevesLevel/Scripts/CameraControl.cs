@@ -5,9 +5,13 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
     public Transform player;
+    public Transform camera;
     float xMouse = 0;
     float yMouse = 0;
     float sensitivity = 2;
+
+    //11/14/2021
+    //Added seperate camera transform to resolve issue with camera controller incorrectly rotating player model.
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +30,11 @@ public class CameraControl : MonoBehaviour
 
         xMouse = Mathf.Clamp(xMouse, -90f, 90f);
 
-        Quaternion localRotation = Quaternion.Euler(xMouse, yMouse, 0.0f);
-        player.transform.rotation = localRotation;
+        Quaternion playerRotation = Quaternion.Euler(0, yMouse, 0.0f);
+        player.transform.rotation = playerRotation;
+
+        Quaternion cameraRotation = Quaternion.Euler(xMouse, yMouse, 0.0f);
+        camera.transform.rotation = cameraRotation;
 
     }
 }
