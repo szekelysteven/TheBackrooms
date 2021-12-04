@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: 3f1abb80119ad3c4e9c45b65f7679b36
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_MetroTrain_pasted__blinn1
+    second: {fileID: 2100000, guid: df2c0e48166d2c94ba54a5bc63da82ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_MetroTrain_pasted__pasted__blinn1
+    second: {fileID: 2100000, guid: a9d616ad533897e46a658d51adcaa982, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_MetroTrain_pasted__pasted__pasted__blinn1
+    second: {fileID: 2100000, guid: 689ff39a8a9a013418278c16ddec9343, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_MetroTrain_pasted__pasted__pasted__blinn3
+    second: {fileID: 2100000, guid: e2c4ab7e700cd3a42921da42ccbda769, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_MetroTrain_pasted__pasted__pasted__pasted__blinn3
+    second: {fileID: 2100000, guid: c414d5cfb8daaa247b617ba679306a9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_MetroTrain_pasted__pasted__pasted__pasted__pasted__blinn1
+    second: {fileID: 2100000, guid: ba4858ed941f744439848de64aa4fd42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_MetroTrain_pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__blinn3
+    second: {fileID: 2100000, guid: 9b5f6d990e473ad4dbabf40d75e437ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_MetroTrain_pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__blinn3
+    second: {fileID: 2100000, guid: 05a391367f40d214f9a1090a389d962c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_MetroTrain_pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__blinn1
+    second: {fileID: 2100000, guid: 1516b63f9f838eb48b4604e91ff96cbc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_MetroTrain_pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__blinn3
+    second: {fileID: 2100000, guid: 6d04e23d94b21384cb1e3bf6b263f733, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_blinn1
+    second: {fileID: 2100000, guid: 053f8f1f5d6e683409b67179df3792b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_pasted__blinn3
+    second: {fileID: 2100000, guid: e3d55545fe7a31347ab332c73484bb7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_pasted__pasted__blinn3
+    second: {fileID: 2100000, guid: a9755535073dccc44925e1cb396acdfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_pasted__pasted__pasted__pasted__blinn1
+    second: {fileID: 2100000, guid: e82500ec5c11f6743a1df545606dd2ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_pasted__pasted__pasted__pasted__pasted__blinn3
+    second: {fileID: 2100000, guid: d60ac4450554b0247858232a348d7431, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_pasted__pasted__pasted__pasted__pasted__pasted__blinn1
+    second: {fileID: 2100000, guid: c768b054aa3d27f4f97aaa028bb06fef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_pasted__pasted__pasted__pasted__pasted__pasted__blinn3
+    second: {fileID: 2100000, guid: b7f601ebc7d076d4e870a83dec78d41c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_pasted__pasted__pasted__pasted__pasted__pasted__pasted__blinn3
+    second: {fileID: 2100000, guid: 9bcda3c00e99e7a4e9a69fdc6ca24e21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__blinn3
+    second: {fileID: 2100000, guid: 866c0d69fdefc9e41a39d5799fff5f95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__blinn1
+    second: {fileID: 2100000, guid: 57af648e8297882428c9965a69fe3b17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__blinn1
+    second: {fileID: 2100000, guid: 267d22e7109b5f740b04cc20b7ad73b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__blinn1
+    second: {fileID: 2100000, guid: 215d36ac855fdfa4cb55406028614376, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetroTrain4_pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__blinn3
+    second: {fileID: 2100000, guid: e4bb789ed4a45ed408e6750f0797c325, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 0bcfcb345e4837242ae2734aba7ec75b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface1
+    second: {fileID: 2100000, guid: 5e4d79da07a961c46b499080430c24e4, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

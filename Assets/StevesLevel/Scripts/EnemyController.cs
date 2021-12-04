@@ -47,8 +47,8 @@ public class EnemyController : FiniteStateMachineAbstractClass
         currentSpeed = 1.0f;
         currentRotationSpeed = 50.0f;
         elapsedTime = 0;
-        attackTime = 0;
-        attackRate = 0;
+        attackTime = 3;
+        attackRate = 3;
         inPlayerVision = false;
 
        

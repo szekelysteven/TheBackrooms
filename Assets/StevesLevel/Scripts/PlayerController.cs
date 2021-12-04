@@ -7,7 +7,16 @@ public class PlayerController : MonoBehaviour
 {
     //To Do: Add array of enemies.
 
-   
+    public enum EnemyType
+    {
+        Mannequin,
+        Rat,
+        Type3,
+        Type4,
+    }
+
+    public EnemyType enemyType;
+    
     private Rigidbody rb;
     private float velocity;
     public float speed;
@@ -88,7 +97,15 @@ public class PlayerController : MonoBehaviour
         {
             for (int i = 0; i < allEnemyObjects.Length; i++)
             {
-                allEnemyObjects[i].GetComponent<EnemyController>().inPlayerVision = false;
+                //*************************************THIS NEEDS ONE FOR EACH ENEMY CONTROLLER TYPE*************************************************
+                if (enemyType == EnemyType.Mannequin)
+                {
+                    allEnemyObjects[i].GetComponent<EnemyController>().inPlayerVision = false;
+                }
+                if (enemyType == EnemyType.Rat)
+                {
+                    allEnemyObjects[i].GetComponent<RatController>().inPlayerVision = false;
+                }
             }
            
         }
