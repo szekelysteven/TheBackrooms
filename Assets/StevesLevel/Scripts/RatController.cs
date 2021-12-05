@@ -22,6 +22,7 @@ using UnityEngine.AI;
 public class RatController : FiniteStateMachineAbstractClass
 {
     public Animator animator;
+    HitEffect a;
 
     public enum EnemyState
     {
@@ -30,7 +31,6 @@ public class RatController : FiniteStateMachineAbstractClass
         Chase,
         Attack,
     }
-
 
     public NavMeshAgent agent;
     public EnemyState currentState;
@@ -155,9 +155,10 @@ public class RatController : FiniteStateMachineAbstractClass
         if (elapsedTime >= attackTime)
         {
             GameObject.Find("Player").GetComponent<PlayerController>().playerHealth -= 20.0f;
-            attackTime = elapsedTime + 1.0f;
+            GameObject.Find("Player").GetComponent<HitEffect>().SimulateHit();
+            attackTime = elapsedTime + 3.0f;
             GetComponent<AudioSource>().Play();
-        }
+}
 
 
         if (distance >= 3.0f)
