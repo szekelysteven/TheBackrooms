@@ -19,7 +19,7 @@ public class EndLevel : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        SceneManager.LoadScene("Grace&Mercy2");
+        SceneManager.LoadScene("StevesLevelMilestone2");
     }
 }
 
