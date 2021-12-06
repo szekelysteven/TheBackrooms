@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class EndLevel : MonoBehaviour
 {
     [SerializeField]
-    public string sceneName;
+    public string sceneName = string.Empty;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,4 +23,6 @@ public class EndLevel : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+
 }
