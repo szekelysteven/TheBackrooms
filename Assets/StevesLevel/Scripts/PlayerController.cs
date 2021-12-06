@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     }
 
     public EnemyType enemyType;
-    
+    public string sceneName;
     private Rigidbody rb;
     private float velocity;
     public float speed;
@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour
 
     public void Dead()
     {
-        SceneManager.LoadScene("Grace&Mercy2");
+        SceneManager.LoadScene(sceneName);
     }
 
     public void SightUpdate()

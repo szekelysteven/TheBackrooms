@@ -10244,6 +10244,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 77164197799386160, guid: af17b651b0fab9143b8f346f37521ed6, type: 3}
+      propertyPath: sceneName
+      value: StevesLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 77164197799386160, guid: af17b651b0fab9143b8f346f37521ed6, type: 3}
       propertyPath: allEnemyObjects.Array.data[0]
       value: 
       objectReference: {fileID: 1531650301}

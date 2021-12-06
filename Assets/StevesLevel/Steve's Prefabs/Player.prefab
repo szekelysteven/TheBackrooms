@@ -293,7 +293,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4809427990562843224}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -348,6 +348,21 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1065622803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5911922402506802685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15493ca36847c844fa6695130789e58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashlightLight: {fileID: 1725206381488325084}
+  powered: 0
+  batteryLife: 10
 --- !u!1001 &1257889944252795902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -472,6 +487,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0da7bd7047849c242ac4b66da6d2ce09, type: 3}
+--- !u!1 &5911922402506802685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3252670452186088406, guid: 0da7bd7047849c242ac4b66da6d2ce09, type: 3}
+  m_PrefabInstance: {fileID: 9162732393472296491}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6431297183167274823 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2767495121242315116, guid: 0da7bd7047849c242ac4b66da6d2ce09, type: 3}
