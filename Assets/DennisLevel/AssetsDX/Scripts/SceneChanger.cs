@@ -23,11 +23,21 @@ public class SceneChanger : MonoBehaviour
     }
     public void LoadGasStation()
     {
-        SceneManager.LoadScene("Albert_GasStation");
+        SceneManager.LoadScene("WalderhaugAlbert_GasStation");
     }
     public void LoadHideoutLevel()
     {
         SceneManager.LoadScene("UndergroundLevel");
+    }
+    
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void SceneSelector()
+    {
+        SceneManager.LoadScene("DebugScene");
     }
 
     //Above is stuff for Buttons. Create an empty that can hold this script
