@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
 
+    [SerializeField] string buildIndexNumber;
+
     public void NextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -26,5 +28,15 @@ public class SceneChanger : MonoBehaviour
     public void LoadHideoutLevel()
     {
         SceneManager.LoadScene("UndergroundLevel");
+    }
+
+    //Above is stuff for Buttons. Create an empty that can hold this script
+
+    //Below is stuff for triggers
+
+
+    public void OnTriggerEnter(Collider other)
+    {
+        SceneManager.LoadScene(buildIndexNumber);
     }
 }
