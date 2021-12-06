@@ -15,8 +15,14 @@ EditorBuildSettings:
     path: Assets/Kevin Level/Scenes/Grace&Mercy.unity
     guid: e05f5f312ad5cf24f9a54959ee21ee16
   - enabled: 1
-    path: Assets/StevesLevel/StevesLevelMilestone2.unity
+    path: Assets/StevesLevel/StevesLevel.unity
     guid: a88edeadc9bc7b74e96aa72f5529b751
+  - enabled: 1
+    path: Assets/DennisLevel/AssetsDX/Scenes/UndergroundLevel.unity
+    guid: 94c32683c39ba504e831f8dbebcff5e9
+  - enabled: 1
+    path: Assets/Albert Level/Scenes/WalderhaugAlbert_GasStation.unity
+    guid: f79f1e32cab7548aba49ee08a423c85e
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
