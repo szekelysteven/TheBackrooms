@@ -31,6 +31,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6431297183167274823}
+  - {fileID: 9100310336641372105}
   - {fileID: 714682935277153372}
   m_Father: {fileID: 77164197799386161}
   m_RootOrder: 0
@@ -213,7 +214,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType: 1
-  sceneName: 
   speed: 4.5
   playerHealth: 100
   detectionRate: 0.5
@@ -279,11 +279,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4809427990562843224}
-  m_LocalRotation: {x: -0.078722164, y: -0.8586077, z: -0.0627454, w: 0.5026517}
-  m_LocalPosition: {x: -0.007, y: 0.0429, z: 0.0024}
-  m_LocalScale: {x: 0.099999964, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: 0.01965041, y: -0.06050098, z: 0.0011912839, w: 0.99797404}
+  m_LocalPosition: {x: 0.19599764, y: -0.4289999, z: 0.9680003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6431297183167274823}
+  m_Father: {fileID: 77164197496476403}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 2.256, y: -6.938, z: 0}
 --- !u!108 &1725206381488325084
@@ -293,7 +293,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4809427990562843224}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -376,7 +376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774414312711071650, guid: 061d32f341ba45f45a0171ea80f9f5ff, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1774414312711071650, guid: 061d32f341ba45f45a0171ea80f9f5ff, type: 3}
       propertyPath: m_LocalPosition.x
