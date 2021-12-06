@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
 
-    [SerializeField] string buildIndexNumber;
+    public int buildIndexNumber;
 
     public void NextScene()
     {
