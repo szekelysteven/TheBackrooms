@@ -21,11 +21,6 @@ public class EndLevel : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-<<<<<<< Updated upstream
-        SceneManager.LoadScene("StevesLevelMilestone2");
-=======
         SceneManager.LoadScene(sceneName);
->>>>>>> Stashed changes
     }
 }
-
