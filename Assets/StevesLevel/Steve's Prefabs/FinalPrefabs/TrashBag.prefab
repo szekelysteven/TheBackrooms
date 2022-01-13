@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2008475542461555377}
   - component: {fileID: 3202149804628258068}
   - component: {fileID: 834473258918402526}
+  - component: {fileID: 2282875153274748528}
   m_Layer: 0
   m_Name: TrashBag
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194678146428532747}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.513, y: 2.211, z: -4.8478}
   m_LocalScale: {x: 3.3539333, y: 3.3539333, z: 3.3539333}
   m_Children: []
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2282875153274748528
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194678146428532747}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.1121112
+  m_Height: 0.31029168
+  m_Direction: 1
+  m_Center: {x: -0.0011732577, y: 0.16115274, z: -0.0046859565}

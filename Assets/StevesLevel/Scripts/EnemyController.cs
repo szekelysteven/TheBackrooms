@@ -37,7 +37,6 @@ public class EnemyController : FiniteStateMachineAbstractClass
     public float attackRate;
     
     
-    
     //Starts the state machine
     protected override void Initialize()
     {
@@ -146,11 +145,11 @@ public class EnemyController : FiniteStateMachineAbstractClass
         }
 
 
-        if (distance >= 3.0f)
+        if (distance > 3.0f)
         {
             currentState = EnemyState.Chase;
         }
-        if (distance <= 3.0f)
+        if (distance < 3.0f)
         {
             currentState = EnemyState.Attack;
         }

@@ -24,15 +24,11 @@ public class Explosion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        elapsedTime += Time.deltaTime;
-        if (elapsedTime >= 3.0f)
-        {
-            Explode();
-        }
+
 
     }
 
-    protected void Explode()
+    public void Explode()
     {
         float rndX = Random.Range(10.0f, 30.0f);
         float rndZ = Random.Range(10.0f, 30.0f);

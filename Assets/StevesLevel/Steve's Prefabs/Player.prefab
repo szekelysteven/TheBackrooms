@@ -214,15 +214,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType: 1
+  thisSceneName: ScalingScene
   speed: 4.5
   playerHealth: 100
-  detectionRate: 0.5
-  FieldOfView: 90
-  ViewDistance: 100
+  detectionRate: 0.1
+  FieldOfView: 45
+  ViewDistance: 5
   allEnemyTransforms:
   - {fileID: 0}
   allEnemyObjects:
   - {fileID: 0}
+  flashlightTurnedOn: 0
   rayDirection:
   - {x: 0, y: 0, z: 0}
 --- !u!54 &77164197799386175
@@ -363,6 +365,7 @@ MonoBehaviour:
   flashlightLight: {fileID: 1725206381488325084}
   powered: 0
   batteryLife: 10
+  flashlightTurnedOn: 0
 --- !u!1001 &1257889944252795902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -416,6 +419,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774414312711071650, guid: 061d32f341ba45f45a0171ea80f9f5ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774414312711071652, guid: 061d32f341ba45f45a0171ea80f9f5ff, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

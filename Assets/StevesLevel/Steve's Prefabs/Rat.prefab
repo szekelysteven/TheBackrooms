@@ -1394,9 +1394,10 @@ GameObject:
   - component: {fileID: 6620595393952631101}
   - component: {fileID: 6620595393952631100}
   - component: {fileID: 6620595393952631102}
-  - component: {fileID: 6620595393952631089}
   - component: {fileID: 1531650302}
   - component: {fileID: 7650011373953199353}
+  - component: {fileID: 105869208}
+  - component: {fileID: 711108442}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Enemy
@@ -1479,25 +1480,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 1
---- !u!114 &6620595393952631089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6620595393952631091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95e64f270ac2bb645978c1756c963202, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 6620595393952631101}
-  agent: {fileID: 6620595393952631100}
-  currentState: 0
-  inPlayerVision: 0
-  distance: 2
-  attackTime: 1
-  attackRate: 3
 --- !u!136 &1531650302
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1508,10 +1490,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.18
-  m_Height: 1
+  m_Radius: 0.09063401
+  m_Height: 0.22450241
   m_Direction: 1
-  m_Center: {x: 0, y: 0.42, z: 0}
+  m_Center: {x: 0, y: 0.032250963, z: -0.08936598}
 --- !u!82 &7650011373953199353
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1608,6 +1590,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &105869208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620595393952631091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e64f270ac2bb645978c1756c963202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6620595393952631101}
+  agent: {fileID: 6620595393952631100}
+  currentState: 0
+  attackRate: 0
+  flashlightOn: 0
+  inPlayerVision: 0
+  attackDistance: 0
+  proximityDistance: 10
+--- !u!114 &711108442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620595393952631091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b33b2311bf8f141ba1709d84a0060b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 3
+  force: 20
 --- !u!1 &6620595394017226566
 GameObject:
   m_ObjectHideFlags: 0

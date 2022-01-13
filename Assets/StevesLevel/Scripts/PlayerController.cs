@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//1/12/2022
+//Updating the way this script deals with enemies. instead of individually drag and dropping references in inspector to create an array, the script will now
+//automatically search and assign all enemies in scene to the enemyarray using "GameObject.FindGameObjectsWithTag".
+
 public class PlayerController : MonoBehaviour
 {
     //To Do: Add array of enemies.
@@ -16,7 +20,7 @@ public class PlayerController : MonoBehaviour
     }
 
     public EnemyType enemyType;
-    public string sceneName;
+    public string thisSceneName;
     private Rigidbody rb;
     private float velocity;
     public float speed;
@@ -26,14 +30,40 @@ public class PlayerController : MonoBehaviour
     private float detectionTime;
     private float elapsedTime;
     private float enemyLastSeenTime;
-    public int FieldOfView = 90;
-    public int ViewDistance = 100;
+    public int FieldOfView = 30;
+    public int ViewDistance = 5;
     public Transform[] allEnemyTransforms;
     public GameObject[] allEnemyObjects;
+    public Vector3[] rayDirection;
+    public bool flashlightTurnedOn;
 
     private Transform playerTransform;
-    public Vector3[] rayDirection;
+    
+    
+    //1/12/2022
+    //Function that will handle automatically setting and updating all array lengths based on what findgamesobjectswithtag finds.
+    public void UpdateArray()
+    {
+        //sets all enemy objects in scene into array
+        allEnemyObjects = GameObject.FindGameObjectsWithTag("Enemy");
 
+        //set length of allEnemyTransforms equal to objects.
+        allEnemyTransforms = new Transform[allEnemyObjects.Length];
+
+        //set length of rays array equal to objects array, top code didnt work.
+        //rayDirection = new Transform[allEnemyObjects.Length];
+        rayDirection = new Vector3[allEnemyObjects.Length];
+
+        //for loop to load transform array based on enemy array length and values.
+        for (int i = 0; i < allEnemyObjects.Length; i++)
+        {
+            allEnemyTransforms[i] = allEnemyObjects[i].GetComponent<Transform>();
+        }
+
+
+
+
+    }
 
     // Start is called before the first frame update
     public void Start()
@@ -44,6 +74,7 @@ public class PlayerController : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody>();
         //Debug.Log(allEnemyTransforms.Length);
         //rayDirection.Length = allEnemyTransforms.Length;
+        UpdateArray();
     }
 
     // Update is called once per frame
@@ -53,6 +84,7 @@ public class PlayerController : MonoBehaviour
         Controls();
         HealthUpdate();
         Timer();
+        FlashlightCheck();
     }
 
     public void Controls()
@@ -85,36 +117,75 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void Dead()
+    //only rat enemy so far needs to know if player flash light is on or off.
+    public void FlashlightCheck()
     {
-        SceneManager.LoadScene(sceneName);
+        //tells all enemy rat objects individually that player has their flashlight on.
+        if (enemyType == EnemyType.Rat)
+        {
+            if (flashlightTurnedOn == true)
+            {
+                for (int i = 0; i < allEnemyObjects.Length; i++)
+                {
+                    allEnemyObjects[i].GetComponent<RatController>().flashlightOn = true;
+                }
+            }
+            if (flashlightTurnedOn == false)
+            {
+                for (int i = 0; i < allEnemyObjects.Length; i++)
+                {
+                    allEnemyObjects[i].GetComponent<RatController>().flashlightOn = false;
+                }
+            }
+        }
+
     }
 
+    public void Dead()
+    { 
+        SceneManager.LoadScene(thisSceneName);
+    }
+
+    
     public void SightUpdate()
     {
-
-        if ((enemyLastSeenTime + 3.0f) <= elapsedTime)
+        //All enemies are reset to out of player vision after time has elapsed from last seen.
+        if (enemyType == EnemyType.Mannequin)
         {
-            for (int i = 0; i < allEnemyObjects.Length; i++)
+            //this code checks if the player has seen any mannequin in the last 3 seconds. if 3 seconds passes and the player
+            //hasnt looked at a mannequin, they will all resume movement.
+            if ((enemyLastSeenTime + 3.0f) <= elapsedTime)
             {
-                //*************************************THIS NEEDS ONE FOR EACH ENEMY CONTROLLER TYPE*************************************************
-                if (enemyType == EnemyType.Mannequin)
+                for (int i = 0; i < allEnemyObjects.Length; i++)
                 {
                     allEnemyObjects[i].GetComponent<EnemyController>().inPlayerVision = false;
                 }
-                if (enemyType == EnemyType.Rat)
+            }
+        }
+
+        if (enemyType == EnemyType.Rat)
+        {
+            //this code checks if the player has seen any rat in the last .1 seconds. if .1 seconds passes and the player
+            //hasnt looked at a rat, the vision check will fail.
+            if ((enemyLastSeenTime + .1f) <= elapsedTime)
+            {
+                for (int i = 0; i < allEnemyObjects.Length; i++)
                 {
                     allEnemyObjects[i].GetComponent<RatController>().inPlayerVision = false;
                 }
             }
-           
         }
-        
+
+
+
+
         RaycastHit hit;
 
-
-        //for loop added to cycle through each enemy in enemy Array's ray direction.
-        for (int i = 0; i < allEnemyTransforms.Length; i++)
+     
+            //for loop added to cycle through each enemy in enemy Array's ray direction. this pulls each
+            //enemy out of the enemy array to check if its in field of view and distance of view. if
+            //both conditions are true, the enemy is in view and will be told thats it detected.
+            for (int i = 0; i < allEnemyTransforms.Length; i++)
         {
             {
 
@@ -133,9 +204,12 @@ public class PlayerController : MonoBehaviour
                         enemyLastSeenTime = elapsedTime;
                         //Debug.Log(hit.collider.tag);
                         //Debug.Log("EnemyDetected");
+                        //this code sets in vision to true in the enemy script.
                         hit.collider.SendMessage("detected", true);
 
+
                     }
+                  
                 }
 
             }
