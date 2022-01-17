@@ -19,6 +19,10 @@
 //when both conditions are true the rat will explode by setting the explode script into motion. Rat
 //chasing  will also need to be proximity based to know when the player is close enough to start following.
 
+//1/17/2022
+//need to triple player vision detection range. rat explosion functionality working. will need to add a timed coroutine to make rat disappear
+//shortly after being "exploded". may also open up the random range for where rat can explode to.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -88,7 +92,7 @@ public class RatController : FiniteStateMachineAbstractClass
             case EnemyState.Idle: UpdateIdleState(); break;
             case EnemyState.Chase: UpdateChaseState(); break;
             case EnemyState.Attack: UpdateAttackState(); break;
-            case EnemyState.Explode: UpdateAttackState(); break;
+            case EnemyState.Explode: UpdateExplodeState(); break;
         }
 
         //Timer to keep track of run time.
@@ -143,7 +147,7 @@ public class RatController : FiniteStateMachineAbstractClass
 
     }
 
-    //method that set inPlayerVision to true for use with raycast messaging.
+    //method that sets inPlayerVision to true for use with raycast messaging.
     protected void detected(bool vision)
     {
         inPlayerVision = vision;

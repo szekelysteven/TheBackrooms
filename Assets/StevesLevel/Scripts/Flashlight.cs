@@ -37,6 +37,7 @@ public class Flashlight : MonoBehaviour
                 //acts as a switch by setting inverse.
                 flashlightLight.enabled = !flashlightLight.enabled;
                 powered = !powered;
+                Debug.Log(powered);
                 //tells the player controller that the flashlight has been turned off.
                 GameObject.Find("Player").GetComponent<PlayerController>().flashlightTurnedOn = powered;
             }

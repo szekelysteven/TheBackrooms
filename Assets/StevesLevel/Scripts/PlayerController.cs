@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float playerHealth = 100.0f;
     //detection rate is how fast the raycast fires off, slower saves processing power.
-    public float detectionRate = .5f;
+    public float detectionRate = .1f;
     private float detectionTime;
     private float elapsedTime;
     private float enemyLastSeenTime;
@@ -108,14 +108,14 @@ public class PlayerController : MonoBehaviour
 
     public void Timer()
     {
-        elapsedTime += Time.deltaTime;
-        if (elapsedTime >= detectionTime)
-        {
+            elapsedTime += Time.deltaTime;
+            if (elapsedTime >= detectionTime)
+            {
 
-            SightUpdate();
-            detectionTime = elapsedTime + detectionRate;
+                SightUpdate();
+                detectionTime = elapsedTime + detectionRate;
+            }
         }
-    }
 
     //only rat enemy so far needs to know if player flash light is on or off.
     public void FlashlightCheck()
@@ -186,34 +186,34 @@ public class PlayerController : MonoBehaviour
             //enemy out of the enemy array to check if its in field of view and distance of view. if
             //both conditions are true, the enemy is in view and will be told thats it detected.
             for (int i = 0; i < allEnemyTransforms.Length; i++)
-        {
             {
-
-                rayDirection[i] = allEnemyTransforms[i].position - transform.position;
-            }
-
-            if ((Vector3.Angle(rayDirection[i], transform.forward)) < FieldOfView)
-            {
-
-                //detect if enemy is within field of view
-                if (Physics.Raycast(playerTransform.position, rayDirection[i], out hit, ViewDistance))
                 {
 
-                    if (hit.collider.tag == "Enemy")
-                    {
-                        enemyLastSeenTime = elapsedTime;
-                        //Debug.Log(hit.collider.tag);
-                        //Debug.Log("EnemyDetected");
-                        //this code sets in vision to true in the enemy script.
-                        hit.collider.SendMessage("detected", true);
-
-
-                    }
-                  
+                    rayDirection[i] = allEnemyTransforms[i].position - transform.position;
                 }
 
+                if ((Vector3.Angle(rayDirection[i], transform.forward)) < FieldOfView)
+                {
+
+                    //detect if enemy is within field of view
+                    if (Physics.Raycast(playerTransform.position, rayDirection[i], out hit, ViewDistance))
+                    {
+
+                        if (hit.collider.tag == "Enemy")
+                        {
+                            enemyLastSeenTime = elapsedTime;
+                            //Debug.Log(hit.collider.tag);
+                            //Debug.Log("EnemyDetected");
+                            //this code sets in vision to true in the enemy script.
+                            hit.collider.SendMessage("detected", true);
+
+
+                        }
+                  
+                    }
+
+                }
             }
-        }
     }
 
     //draw the rays with gizmo so we can view in editor

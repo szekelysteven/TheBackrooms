@@ -655,6 +655,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1065622803, guid: af17b651b0fab9143b8f346f37521ed6, type: 3}
+      propertyPath: batteryLife
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 77164197799386160, guid: af17b651b0fab9143b8f346f37521ed6, type: 3}
+      propertyPath: ViewDistance
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 77164197799386160, guid: af17b651b0fab9143b8f346f37521ed6, type: 3}
       propertyPath: rayDirection.Array.size
       value: 0
@@ -810,6 +818,18 @@ PrefabInstance:
     - target: {fileID: 77164197799386165, guid: af17b651b0fab9143b8f346f37521ed6, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725206381488325084, guid: af17b651b0fab9143b8f346f37521ed6, type: 3}
+      propertyPath: m_DrawHalo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725206381488325084, guid: af17b651b0fab9143b8f346f37521ed6, type: 3}
+      propertyPath: m_Intensity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725206381488325084, guid: af17b651b0fab9143b8f346f37521ed6, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af17b651b0fab9143b8f346f37521ed6, type: 3}
@@ -4315,6 +4335,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4736242568551731195, guid: 325f71a857370ea4f9a7ff688769c6cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8258087743134152195, guid: 325f71a857370ea4f9a7ff688769c6cb, type: 3}
       propertyPath: m_Name
       value: Elevator
@@ -4329,7 +4353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8777884697590295737, guid: 325f71a857370ea4f9a7ff688769c6cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.245
+      value: 2.38
       objectReference: {fileID: 0}
     - target: {fileID: 8777884697590295737, guid: 325f71a857370ea4f9a7ff688769c6cb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4372,10 +4396,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 105869208, guid: 0f44c974677641a47987a1b752c36dfe, type: 3}
-      propertyPath: proximityDistance
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6620595393952631088, guid: 0f44c974677641a47987a1b752c36dfe, type: 3}
       propertyPath: m_RootOrder
       value: 67
@@ -4454,10 +4474,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 105869208, guid: 0f44c974677641a47987a1b752c36dfe, type: 3}
-      propertyPath: proximityDistance
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6620595393952631088, guid: 0f44c974677641a47987a1b752c36dfe, type: 3}
       propertyPath: m_RootOrder
       value: 75
