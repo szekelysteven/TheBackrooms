@@ -224,9 +224,9 @@ MonoBehaviour:
   - {fileID: 0}
   allEnemyObjects:
   - {fileID: 0}
-  flashlightTurnedOn: 0
   rayDirection:
   - {x: 0, y: 0, z: 0}
+  flashlightTurnedOn: 0
 --- !u!54 &77164197799386175
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -295,7 +295,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4809427990562843224}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -306,7 +306,7 @@ Light:
   m_InnerSpotAngle: 19.8
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
