@@ -143,7 +143,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330825812502973269}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -309,6 +309,7 @@ GameObject:
   - component: {fileID: 7670196080037693519}
   - component: {fileID: 2067255176481039244}
   - component: {fileID: 1090102332049559321}
+  - component: {fileID: 644772026966174315}
   m_Layer: 0
   m_Name: Flashlight
   m_TagString: Untagged
@@ -380,6 +381,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &644772026966174315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3061697782121797178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15493ca36847c844fa6695130789e58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashlightLight: {fileID: 330825812502973271}
+  powered: 0
+  batteryLife: 0
+  flashlightTurnedOn: 0
 --- !u!1 &4338089076617240636
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,11 +993,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8398187b78dcb9e4eb1a50d241e0d921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: 0
-  thisSceneName: 
-  speed: 2
+  enemyType: 1
+  thisSceneName: ScalingScene
+  speed: 4.5
   playerHealth: 100
-  detectionRate: 0.5
+  detectionRate: 0.1
   FieldOfView: 45
   ViewDistance: 100
   allEnemyTransforms: []
