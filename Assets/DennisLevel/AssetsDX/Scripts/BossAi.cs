@@ -7,6 +7,7 @@ public class BossAi : MonoBehaviour
 {
 
     private Transform player;
+    [SerializeField] Transform lookAtTarget;
 
     public GameObject projectile;
     private float timeBtwShots;
@@ -35,6 +36,8 @@ public class BossAi : MonoBehaviour
 
     void Update()
     {
+        transform.LookAt(lookAtTarget);
+
         if (timeBtwShots <= 0 && battleStart == true)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
