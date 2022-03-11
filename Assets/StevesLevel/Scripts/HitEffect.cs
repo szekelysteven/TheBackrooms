@@ -8,7 +8,8 @@ using UnityEngine;
 public class HitEffect : MonoBehaviour
 {
     public GameObject hitEffectPlane;
-    public float alpha; 
+    public float alpha;
+    public float red;
     private float currentTime;
     private float timePoint;
     // Start is called before the first frame update
@@ -21,18 +22,19 @@ public class HitEffect : MonoBehaviour
     void Update()
     {
         currentTime += Time.deltaTime;
-        ChangeAlpha(hitEffectPlane.GetComponent<Renderer>().material, alpha);
+        ChangeAlpha(hitEffectPlane.GetComponent<Renderer>().material, alpha, red);
         while ((timePoint < currentTime) && (alpha >= 0))
         {
            
             alpha -= .2F;
+            red = 0;
         }
     }
 
-    void ChangeAlpha(Material mat, float alphaVal)
+    void ChangeAlpha(Material mat, float alphaVal, float redVal)
     {
         Color oldColor = mat.color;
-        Color newColor = new Color(oldColor.r, oldColor.g, oldColor.b, alphaVal);
+        Color newColor = new Color(redVal, oldColor.g, oldColor.b, alphaVal);
         mat.SetColor("_Color", newColor);
     }
 
@@ -40,5 +42,6 @@ public class HitEffect : MonoBehaviour
     {
         alpha += .3F;
         timePoint = currentTime + 5;
+        red = 255;
     }
 }
