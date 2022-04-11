@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Kevin Level/Scenes/Grace&Mercy.unity
     guid: e05f5f312ad5cf24f9a54959ee21ee16
   - enabled: 1
-    path: Assets/StevesLevel/ScalingScene.unity
+    path: Assets/StevesLevel/TestScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Albert Level/Scenes/WalderhaugAlbert_GasStation.unity
