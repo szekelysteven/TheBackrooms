@@ -55,8 +55,9 @@ public class Projectile : MonoBehaviour
 
     void DestroyProjectile()
     {
-        Instantiate(particleInstantiation, transform.position, transform.rotation);
+        GameObject partic = Instantiate(particleInstantiation, transform.position, transform.rotation);
         GetComponent<ParticleSystem>().Play();
         Destroy(gameObject);
+        Destroy(partic, 3);
     }
 }
