@@ -12,6 +12,8 @@ public class Projectile : MonoBehaviour
 
     [SerializeField] ParticleSystem explosionParticle;
 
+    public GameObject particleInstantiation;
+
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -27,6 +29,7 @@ public class Projectile : MonoBehaviour
 
         if (transform.position.x == target.x && transform.position.y == target.y)
         {
+            Instantiate(particleInstantiation, transform.position, transform.rotation);
             DestroyProjectile();
         }
 

@@ -15,6 +15,8 @@ public class BossAi : MonoBehaviour
 
     private bool battleStart;
 
+    public GameObject[] pylons;
+
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;

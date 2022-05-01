@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -7087658112772575023}
   - component: {fileID: -401613240419633106}
   - component: {fileID: -322552828236394256}
+  - component: {fileID: 6066981011508677752}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -314,7 +315,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!114 &-4048205819257926608
@@ -331,6 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   explosionParticle: {fileID: 7172689409248587240, guid: 6bf9ff58cb8bc2d41abf16e1d0ddf42f, type: 3}
+  particleInstantiation: {fileID: 7485740735300628300, guid: e8ec706675317ea4181e2d8ad3d86e9e, type: 3}
 --- !u!65 &-7087658112772575023
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5174,3 +5176,19 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!54 &6066981011508677752
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852271474052876701}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
