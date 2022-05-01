@@ -208,7 +208,7 @@ public class RatController : FiniteStateMachineAbstractClass
         {
             GameObject.Find("Player").GetComponent<PlayerController>().playerHealth -= 20.0f;
             GameObject.Find("Player").GetComponent<HitEffect>().SimulateHit();
-            attackTime = elapsedTime + 3.0f;
+            attackTime = elapsedTime + 1.5f;
             GetComponent<AudioSource>().Play();
 }
 

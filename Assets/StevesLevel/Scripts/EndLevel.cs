@@ -21,6 +21,9 @@ public class EndLevel : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        SceneManager.LoadScene(sceneName);
+        if (collision.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 }
