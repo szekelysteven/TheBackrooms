@@ -23,8 +23,11 @@ public class ItemDamage : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        collideDetected = true;
-        GetComponent<AudioSource>().Play();
+        if (collision.gameObject.tag == "Player")
+        {
+            collideDetected = true;
+            GetComponent<AudioSource>().Play();
+        }
     }
 
     public IEnumerator DamageOverTime()

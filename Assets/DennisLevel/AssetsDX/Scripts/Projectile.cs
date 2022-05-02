@@ -12,6 +12,8 @@ public class Projectile : MonoBehaviour
 
     [SerializeField] ParticleSystem explosionParticle;
 
+    public GameObject particleInstantiation;
+
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -27,22 +29,35 @@ public class Projectile : MonoBehaviour
 
         if (transform.position.x == target.x && transform.position.y == target.y)
         {
+            
             DestroyProjectile();
         }
 
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Pylon")
+        {
+            
+            Destroy(collision.gameObject);
+            DestroyProjectile();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            
             DestroyProjectile();
         }
     }
 
     void DestroyProjectile()
     {
+        GameObject partic = Instantiate(particleInstantiation, transform.position, transform.rotation);
         GetComponent<ParticleSystem>().Play();
         Destroy(gameObject);
+        Destroy(partic, 3);
     }
 }
