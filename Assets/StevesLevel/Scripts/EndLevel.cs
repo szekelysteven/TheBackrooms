@@ -24,6 +24,6 @@ public class EndLevel : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             SceneManager.LoadScene(sceneName);
-        }
+        }                                                                                             
     }
 }
