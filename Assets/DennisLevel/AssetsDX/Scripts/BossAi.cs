@@ -5,17 +5,7 @@ using UnityEngine;
 
 public class BossAi : MonoBehaviour
 {
-    /*
-    public enum Stage
-    {
-        WaitingToStart,
-        Stage_1,
-        Stage_2,
-        Stage_3,
-    }
-    */
 
-    //private Stage stage;
 
     private Transform player;
     [SerializeField] Transform lookAtTarget;
@@ -32,14 +22,30 @@ public class BossAi : MonoBehaviour
 
     public AudioSource audioSource;
 
+    private bool stageTwo;
+
+    [SerializeField] private GameObject[] pylonObjects;
+
+    private int stageTwoBossCount;
+    private int pylonCount;
 
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
+        
+
         timeBtwShots = startTimeBtwShots;
 
         battleStart = false;
+
+        stageTwo = false;
+    }
+    private void Start()
+    {
+        pylonObjects = GameObject.FindGameObjectsWithTag("Pylon");
+        pylonCount = pylonObjects.Length;
+
 
     }
 
@@ -50,7 +56,6 @@ public class BossAi : MonoBehaviour
             battleStart = true;
             Debug.Log("You have entered the Boss Battle Arena!");
 
-            //stage = Stage.WaitingToStart;
             
         }
     }
@@ -71,81 +76,42 @@ public class BossAi : MonoBehaviour
 
         }
 
-        if (pylons.Length <= 0)
+        if (pylonObjects != null)
         {
-            StartCoroutine(stage2BossBattle());
+            pylonCount = pylonCount - 1;
+        }
+        
+        
+        if (pylonObjects.Length <= 0)
+        {
+            stageTwo = true;
+            BossStageTwo();
+           
             
         }
     }
 
 
-
-    IEnumerator stage2BossBattle()
+    private void BossStageTwo()
     {
-        Debug.Log("all Pylons are destroyed, Boss is getting angry!");
-        startTimeBtwShots = 2.5f;
-        yield return new WaitForSeconds(15);
-
-        Debug.Log("Stage two has finished at : " + Time.time);
-
-
-    }
-
-
-
-    /* private void BossBattleStages()
-    {
-        switch (stage)
+        Debug.Log("The Boss has entered stage two");
+        if (stageTwo == true)
         {
+            stageTwoBossCount = 0;
+            startTimeBtwShots = 2.5f;
+            stageTwoBossCount++;
+            
+            if (stageTwoBossCount == 15)
+            {
+                Debug.Log("15 seconds has passed within Stage two. Starting end");
+            }
 
-            case Stage.Stage_1:
-
-                if (pylons.Length <= 0)
-                {
-                    Debug.Log("Pylons Destroyed!");
-                    //all pylons are destroyed move to stage 2
-                    StartNextStage();
-                }
-                break;
-            case Stage.Stage_2:
-
-                startTimeBtwShots = 2.5f;
-                yield return new WaitForSeconds (10);
-                Debug.Log("Boss is getting Angry!");
-
-                break;
-
-            case Stage.Stage_3:
-
-                startTimeBtwShots = 1;
-                yield return new WaitForSeconds(7);
-                Debug.Log("Boss is at the brink!");
-
-                break;
         }
 
     }
 
 
-    private void StartNextStage()
-    {
-        switch (stage)
-        {
 
-            case Stage.WaitingToStart:
-                stage = Stage.Stage_1;
-                break;
-            case Stage.Stage_1:
-                stage = Stage.Stage_2; 
-                break;
-            case Stage.Stage_2:
-                stage = Stage.Stage_3;
-                break;
 
-        }
-
-        Debug.Log("Starting next stage: " + stage);
-    }
-    */
 
 }
