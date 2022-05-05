@@ -24,10 +24,11 @@ public class BossAi : MonoBehaviour
 
     private bool stageTwo;
 
-    [SerializeField] private GameObject[] pylonObjects;
+    public GameObject[] pylonObjects;
 
     private int stageTwoBossCount;
     private int pylonCount;
+    private bool isPylonEmpty;
 
     void Awake()
     {
@@ -78,17 +79,11 @@ public class BossAi : MonoBehaviour
 
         if (pylonObjects != null)
         {
-            pylonCount = pylonCount - 1;
-        }
-        
-        
-        if (pylonObjects.Length <= 0)
-        {
             stageTwo = true;
+            Debug.Log("The Pylons are null, starting stage two");
             BossStageTwo();
-           
-            
         }
+        
     }
 
 
