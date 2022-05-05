@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c987bdcbe114546a527424b30fcff3, type: 3}
+  m_Name: DeptStoreScene
+  m_EditorClassIdentifier: 
+  sentences:
+  - sentences: []
+    text: I know I walked through the front door...... Somehow I found myself in
+      that Department Store.....Those Mannequins were alive right!???? Everywhere
+      I turned one was right there.. Keep it together Flynn now let's check out that
+      graveyard.
+    speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}
+  - sentences: []
+    text: 
+    speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}
+  background: {fileID: 21300000, guid: 7c8729ffa0eb5774a9990d882198496f, type: 3}
+  nextScene: {fileID: 11400000, guid: 9313aec093f15cd43bae4706e4c7c960, type: 2}

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c987bdcbe114546a527424b30fcff3, type: 3}
+  m_Name: UndegroundScene
+  m_EditorClassIdentifier: 
+  sentences:
+  - sentences:
+    - sentences: []
+      text: This video is the last known recording Gregg Garcia. A conspiracy theorist
+        who has went missing in Cineworth Valley
+      speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}
+    text: 'Those were bodies hanging up there!! Human bodies!! My God, what are these
+      people thinking? Garcia was right these people are trying to summon an Angel....
+      The only thing is I''ve never heard of an Angel demanding sacrifices. Through
+      this door lies the source of this Evil. This may be my final entry. If anyone
+      were to find this God help us all.   '
+    speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}
+  - sentences: []
+    text: This investigation was conducted by Private Investigator Casey Flynn.
+    speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}
+  - sentences: []
+    text: 'All of the following were recovered from the remains of Cineworth Valley. '
+    speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}
+  background: {fileID: 21300000, guid: 7c8729ffa0eb5774a9990d882198496f, type: 3}
+  nextScene: {fileID: 11400000, guid: 9313aec093f15cd43bae4706e4c7c960, type: 2}

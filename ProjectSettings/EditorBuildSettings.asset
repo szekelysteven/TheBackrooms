@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/UI 1/Assets/Menu.unity
     guid: 1ceb3c8e09384914a89dda9de294b03e
   - enabled: 1
+    path: Assets/Cutscene/Dept Store.unity
+    guid: 96e74b13508eb5d4181a7621c38c1a16
+  - enabled: 1
     path: Assets/Kevin Level/Scenes/Grace&Mercy.unity
     guid: e05f5f312ad5cf24f9a54959ee21ee16
   - enabled: 1
