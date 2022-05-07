@@ -23,7 +23,7 @@ public class WaypointController : MonoBehaviour
     public float movementSpeed;
 
 
-    public float lookRadius = 8f;
+    public float lookRadius = 10f;
     private Transform playerTarget;
     private float chaseDistance;
 
@@ -47,8 +47,13 @@ public class WaypointController : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, playerTarget.position, movementSpeed * Time.deltaTime);
             Debug.Log("Player is within Range, following the player with a distance of " + chaseDistance);
-            playerDetected = true; 
+            playerDetected = true;
+
         }
+        else
+            playerDetected = false;
+
+
 
 
         float movementStep = movementSpeed * Time.deltaTime;

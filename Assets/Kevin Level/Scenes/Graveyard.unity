@@ -6922,8 +6922,8 @@ MonoBehaviour:
   - {fileID: 1477270157}
   - {fileID: 246748589}
   - {fileID: 95682841}
-  movementSpeed: 5
-  lookRadius: 8
+  movementSpeed: 3.9
+  lookRadius: 10
 --- !u!82 &952383595
 AudioSource:
   m_ObjectHideFlags: 0
