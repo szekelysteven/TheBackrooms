@@ -10,6 +10,7 @@ public class WaypointController : MonoBehaviour
      * and repeats back to the first waypoint creating a loop.
     */
 
+    bool playerDetected = false;
     public List<Transform> waypoints = new List<Transform>();
     private Transform targetWaypoint;
     private int targetWaypointIndex;
@@ -46,6 +47,7 @@ public class WaypointController : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, playerTarget.position, movementSpeed * Time.deltaTime);
             Debug.Log("Player is within Range, following the player with a distance of " + chaseDistance);
+            playerDetected = true; 
         }
 
 
@@ -54,8 +56,10 @@ public class WaypointController : MonoBehaviour
         float distance = Vector3.Distance(transform.position, targetWaypoint.position);
         //Debug.Log("Distance: " + distance);
         CheckDistanceToWaypoint(distance);
-
-        transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, movementStep);
+        if (playerDetected == false)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, movementStep);
+        }
 
 
  
@@ -67,6 +71,7 @@ public class WaypointController : MonoBehaviour
         {
             Debug.Log("Player is out of range, moving to next waypoint");
             targetWaypointIndex++;
+            playerDetected = false;
             UpdateTargetWaypoint();
         }
     }
