@@ -16,6 +16,8 @@ using UnityEngine.AI;
 
 public class EnemyController : FiniteStateMachineAbstractClass
 {
+    
+    HitEffect a;
     public enum EnemyState
     {
         None,
@@ -139,6 +141,7 @@ public class EnemyController : FiniteStateMachineAbstractClass
         //reduces players health over time while being touched
         if (elapsedTime >= attackTime)
         {
+            GameObject.Find("Player").GetComponent<HitEffect>().SimulateHit();
             GameObject.Find("Player").GetComponent<PlayerController>().playerHealth -= 20.0f;
             attackTime = elapsedTime + 1.0f;
             GetComponent<AudioSource>().Play();
