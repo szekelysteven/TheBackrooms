@@ -1,0 +1,432 @@
+fileFormatVersion: 2
+guid: 9624213188fc24d1a864459735751074
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7703924093057047557
+    second: flynnEyebrows_Neutral
+  - first:
+      213: 8776129474389416089
+    second: flynnEyebrows_Down
+  - first:
+      213: 8844641743591696918
+    second: flynnEyebrows_Up
+  - first:
+      213: 8455224501652131038
+    second: flynnEyes
+  - first:
+      213: -6665212969287811359
+    second: mouthOpen
+  - first:
+      213: -4123527858635034363
+    second: mouthFrown
+  - first:
+      213: -1208143434255090856
+    second: mouthSmirk
+  - first:
+      213: 2695448833016473023
+    second: garciaEyebrows_Neutral
+  - first:
+      213: 6905251057038520248
+    second: garciaEyebrows_Down
+  - first:
+      213: -7834910518858036650
+    second: garciaEyebrows_Up
+  - first:
+      213: 2045155058107241510
+    second: Ragnvald Jormunrek
+  - first:
+      213: -6360282484138302135
+    second: Dead Face
+  - first:
+      213: 4463539103197953449
+    second: garciaGhost
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: flynnEyebrows_Neutral
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 359
+        width: 122
+        height: 13
+      alignment: 9
+      pivot: {x: 0.48785856, y: 0.33470505}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3e2c0cad9261590800000000000000
+      internalID: -7703924093057047557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flynnEyebrows_Down
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 351
+        width: 126
+        height: 20
+      alignment: 9
+      pivot: {x: 0.45984468, y: 0.56324464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99811df42431bc970800000000000000
+      internalID: 8776129474389416089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flynnEyebrows_Up
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 350
+        width: 122
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61aef5c0eca7eba70800000000000000
+      internalID: 8844641743591696918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flynnEyes
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 329
+        width: 103
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc8725f2edf65570800000000000000
+      internalID: 8455224501652131038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouthOpen
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 264
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eef5454e186083a0800000000000000
+      internalID: -6665212969287811359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouthFrown
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 266
+        width: 41
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5102591, y: 0.5664143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501b1ac824946c6c0800000000000000
+      internalID: -4123527858635034363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouthSmirk
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 266
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b318392ffcb3fe0800000000000000
+      internalID: -1208143434255090856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: garciaEyebrows_Neutral
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 231
+        width: 114
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5203abe68286520800000000000000
+      internalID: 2695448833016473023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: garciaEyebrows_Down
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 232
+        width: 114
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfeba3304164df50800000000000000
+      internalID: 6905251057038520248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: garciaEyebrows_Up
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 225
+        width: 112
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ace7ce46ec44390800000000000000
+      internalID: -7834910518858036650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ragnvald Jormunrek
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 5
+        width: 109
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624531d80b9d16c10800000000000000
+      internalID: 2045155058107241510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Face
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 9
+        width: 95
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9452cc567ccbbb7a0800000000000000
+      internalID: -6360282484138302135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: garciaGhost
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 3
+        width: 109
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9adfd2f5a2da1fd30800000000000000
+      internalID: 4463539103197953449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 08ba5774a22d94054ab7ee12b7e2a784
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
