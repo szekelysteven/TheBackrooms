@@ -16,15 +16,15 @@ public class BossAi : MonoBehaviour
 
     private bool battleStart;
 
-    public GameObject[] pylons;
-
     public AudioClip bossRoar;
 
-    public AudioSource audioSource;
+    AudioSource audioSource;
 
     private bool stageTwo;
+    private bool stageOneisDone = false;
 
-    public GameObject[] pylonObjects;
+    public GameObject[] pylonChecker;
+
 
     private int stageTwoBossCount;
     private int pylonCount;
@@ -34,8 +34,6 @@ public class BossAi : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
-        
-
         timeBtwShots = startTimeBtwShots;
 
         battleStart = false;
@@ -44,8 +42,7 @@ public class BossAi : MonoBehaviour
     }
     private void Start()
     {
-        pylonObjects = GameObject.FindGameObjectsWithTag("Pylon");
-        pylonCount = pylonObjects.Length;
+        audioSource = GetComponent<AudioSource>();
 
 
     }
@@ -63,6 +60,9 @@ public class BossAi : MonoBehaviour
 
     void Update()
     {
+        pylonChecker = GameObject.FindGameObjectsWithTag("Pylon");
+        pylonCount = pylonChecker.Length;
+
         transform.LookAt(lookAtTarget);
 
         if (timeBtwShots <= 0 && battleStart == true)
@@ -77,11 +77,13 @@ public class BossAi : MonoBehaviour
 
         }
 
-        if (pylonObjects != null)
+        if (pylonCount <= 0 && !stageOneisDone)
         {
             stageTwo = true;
-            Debug.Log("The Pylons are null, starting stage two");
+            Debug.Log("The Pylons defending the Bic are gone, starting stage two");
             BossStageTwo();
+            stageTwo = false;
+            stageOneisDone = true;
         }
         
     }
@@ -92,9 +94,11 @@ public class BossAi : MonoBehaviour
         Debug.Log("The Boss has entered stage two");
         if (stageTwo == true)
         {
+            audioSource.PlayOneShot(bossRoar, 0.7f);
             stageTwoBossCount = 0;
             startTimeBtwShots = 2.5f;
             stageTwoBossCount++;
+            Debug.Log("Boss Count timer = " + stageTwoBossCount);
             
             if (stageTwoBossCount == 15)
             {

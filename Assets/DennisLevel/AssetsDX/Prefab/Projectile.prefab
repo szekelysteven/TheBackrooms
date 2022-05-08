@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -7087658112772575023}
   - component: {fileID: -401613240419633106}
   - component: {fileID: -322552828236394256}
-  - component: {fileID: 6066981011508677752}
+  - component: {fileID: 7096498560125973977}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -5176,7 +5176,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!54 &6066981011508677752
+--- !u!54 &7096498560125973977
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5190,5 +5190,5 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 14
   m_CollisionDetection: 0

@@ -45,7 +45,10 @@ public class Projectile : MonoBehaviour
         }
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            GameObject.Find("Player").GetComponent<PlayerController>().playerHealth -= 50.0f;
+            GameObject.Find("Player").GetComponent<HitEffect>().SimulateHit();
+
+            
         }
     }
 
