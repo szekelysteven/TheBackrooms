@@ -4,6 +4,6 @@ using UnityEngine;
 [System.Serializable]
 public class Cutscene : ScriptableObject
 {
-    public string speakerName;
+    public string speakerName;  //states the name of the speaker along with there text color. 
     public Color textColor;
 }

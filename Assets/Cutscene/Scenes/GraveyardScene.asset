@@ -15,12 +15,10 @@ MonoBehaviour:
   sentences:
   - sentences: []
     text: "What the Hell was that thing???? All those orbs rotating, were they souls?.
-      It just kept repeating \"We will meet again\u201D over and over."
-    speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}
-  - sentences: []
-    text: I'm glad it never caught me. The gems opened the door in the mausoleum.
+      It just kept repeating \"We will meet again\u201D over and over. Im glad that
+      thing never caught me. The gems on the crosses opened the door in the mausoleum.
       Whatever is down there I need to stop it. Even if I take the town down with
-      me.
+      me."
     speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}
   background: {fileID: 21300000, guid: 7c8729ffa0eb5774a9990d882198496f, type: 3}
   nextScene: {fileID: 11400000, guid: ecd6878ada38864419f0bf883176b36f, type: 2}

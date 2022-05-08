@@ -24,28 +24,20 @@ MonoBehaviour:
     m_Scopes: []
     m_IsDefault: 1
     m_Capabilities: 7
-  - m_Id: scoped:2D Sprite
-    m_Name: 2D Sprite
-    m_Url: https://docs.unity3d.com/Packages/com.unity.2d.sprite@1.0/manual/index.html
-    m_Scopes:
-    - Sprite Editor
-    m_IsDefault: 0
-    m_Capabilities: 0
-  m_UserSelectedRegistryName: 2D Sprite
+  m_UserSelectedRegistryName: 
   m_UserAddingNewScopedRegistry: 0
   m_RegistryInfoDraft:
     m_ErrorMessage: 
     m_Original:
-      m_Id: scoped:2D Sprite
-      m_Name: 2D Sprite
-      m_Url: https://docs.unity3d.com/Packages/com.unity.2d.sprite@1.0/manual/index.html
-      m_Scopes:
-      - Sprite Editor
+      m_Id: 
+      m_Name: 
+      m_Url: 
+      m_Scopes: []
       m_IsDefault: 0
       m_Capabilities: 0
     m_Modified: 0
-    m_Name: 2D Sprite
-    m_Url: https://docs.unity3d.com/Packages/com.unity.2d.sprite@1.0/manual/index.html
+    m_Name: 
+    m_Url: 
     m_Scopes:
-    - Sprite Editor
+    - 
     m_SelectedScopeIndex: 0

@@ -30,11 +30,11 @@ EditorBuildSettings:
     path: Assets/Cutscene/Dept Store.unity
     guid: 96e74b13508eb5d4181a7621c38c1a16
   - enabled: 1
-    path: Assets/Kevin Level/Scenes/Graveyard.unity
-    guid: 1aa7c98568204b5439fa84dceb733715
-  - enabled: 1
     path: Assets/Cutscene/Graveyard Level.unity
     guid: f50fe35f4ecdd1d46a92c36abbb9d2ad
+  - enabled: 1
+    path: Assets/Kevin Level/Scenes/Graveyard.unity
+    guid: 1aa7c98568204b5439fa84dceb733715
   - enabled: 1
     path: Assets/DennisLevel/AssetsDX/Scenes/UndergroundLevel.unity
     guid: 94c32683c39ba504e831f8dbebcff5e9
@@ -42,14 +42,14 @@ EditorBuildSettings:
     path: Assets/Cutscene/Underground Level Cutscene.unity
     guid: e1d6fb4952e190746a0ef1d28b6f9999
   - enabled: 1
-    path: Assets/DennisLevel/AssetsDX/Scenes/EndScene.unity
-    guid: ebfcbd1d9eb99ba44abd08e7c0b9f6dd
-  - enabled: 1
     path: Assets/Cutscene/End Scene.unity
     guid: 7015c979dd468494aaa7296c143de6c3
   - enabled: 1
     path: Assets/UI 1/Assets/DebugScene.unity
     guid: e31adf811ed7c634d82a7341b30dde73
+  - enabled: 1
+    path: Assets/DennisLevel/AssetsDX/Scenes/EndScene.unity
+    guid: ebfcbd1d9eb99ba44abd08e7c0b9f6dd
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        bottomBar.PlayScene(currentScene);   
+        bottomBar.PlayScene(currentScene);   ///plays the current scene. 
     }
 
     // Update is called once per frame
@@ -17,10 +18,11 @@ public class GameController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)) 
         {
-            Debug.Log("Mouse Clicked");
+            Debug.Log("Mouse Clicked"); ///ensure that the mouse is indeed active and playing
             if(bottomBar.IsCompleted())
             {
-                bottomBar.PlayNextSentence();
+                bottomBar.PlayNextSentence(); // once the mouse is clicked this advance into the next screen. 
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //loads the next scene in the build index after the player clicks on the last sentence. 
             }
                     
         }

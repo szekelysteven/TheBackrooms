@@ -7,9 +7,9 @@ public class BottomBarController : MonoBehaviour
 {
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
-    private int sentenceIndex = -1;
+    private int sentenceIndex = -1; 
     public StoryScene currentScene;
-    private State state = State.COMPLETED;
+    private State state = State.COMPLETED; 
 
 
     private enum State
@@ -17,13 +17,13 @@ public class BottomBarController : MonoBehaviour
         PLAYING, COMPLETED
     }
    
-    public void PlayScene(StoryScene scene)
+    public void PlayScene(StoryScene scene) // plays the current scene
     {
         currentScene = scene;
         sentenceIndex = -1;
         PlayNextSentence();
     }
-    public void PlayNextSentence()
+    public void PlayNextSentence() //plays the next sentence and displays who is speaking. 
     {
         StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
@@ -33,9 +33,9 @@ public class BottomBarController : MonoBehaviour
     public bool IsCompleted()
 
     {
-        return state == State.COMPLETED;
+        return state == State.COMPLETED; /// once the scene is completed it will return to a completed state.  
     }
-   private IEnumerator TypeText(string text)
+   private IEnumerator TypeText(string text) // this creates a typing effect on the scene. 
     {
         barText.text = "";
         state = State.PLAYING;
@@ -44,8 +44,8 @@ public class BottomBarController : MonoBehaviour
         while(state != State.COMPLETED)
         {
             barText.text += text[wordIndex];
-            yield return new WaitForSeconds(0.05f);
-            if(++wordIndex == text.Length)
+            yield return new WaitForSeconds(0.05f); //scrolls the speed of the sentence by -0.05
+            if (++wordIndex == text.Length)
                 {
                 state = State.COMPLETED;
                 break;
