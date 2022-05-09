@@ -1141,7 +1141,7 @@ GameObject:
   - component: {fileID: 141220797}
   - component: {fileID: 141220796}
   m_Layer: 0
-  m_Name: Dept Store
+  m_Name: Graveyard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d13bdc8bb57784d897f59e6809c74e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Grace&Mercy
+  sceneName: Graveyard
 --- !u!65 &141220797
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4040,7 +4040,7 @@ GameObject:
   - component: {fileID: 700052020}
   - component: {fileID: 700052019}
   m_Layer: 0
-  m_Name: Dept Store (1)
+  m_Name: Graveyard2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4058,7 +4058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d13bdc8bb57784d897f59e6809c74e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Grace&Mercy
+  sceneName: Graveyard
 --- !u!65 &700052020
 BoxCollider:
   m_ObjectHideFlags: 0
