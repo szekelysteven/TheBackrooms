@@ -15,10 +15,10 @@ MonoBehaviour:
   sentences:
   - text: This is  the last known footage of Gregg Garcia. A conspriacy theorist
       who has gone missing in the small town of Cineworth Valley. This game recounts
-      Case file #138. This investigation was conducted by Private Investigator Casey
-      Flynn. All of the following were recovered from the remains of Cineworth Valley. 
-      Retracing Garcia's step the first place he visited was the Department store
-      Grace & Mercy.
+      Case file #138. An investigation conducted by Private Investigator Casey Flynn.
+      All of the following recounts were recovered from the remains of Cineworth
+      Valley. The entry begins with Greg's first encouter with the cultists in the
+      Subways.
     speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}
   background: {fileID: 21300000, guid: 7c8729ffa0eb5774a9990d882198496f, type: 3}
   nextScene: {fileID: 11400000, guid: a537d0bea942c3d42a4a761de632f066, type: 2}

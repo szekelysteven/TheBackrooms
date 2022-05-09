@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: GraveyardScene
   m_EditorClassIdentifier: 
   sentences:
-  - sentences: []
-    text: "What the Hell was that thing???? All those orbs rotating, were they souls?.
+  - text: "What the Hell was that thing???? All those orbs rotating, were they souls?
       It just kept repeating \"We will meet again\u201D over and over. Im glad that
       thing never caught me. The gems on the crosses opened the door in the mausoleum.
       Whatever is down there I need to stop it. Even if I take the town down with
