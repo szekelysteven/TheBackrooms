@@ -21,14 +21,26 @@ public class BossAi : MonoBehaviour
     AudioSource audioSource;
 
     private bool stageTwo;
+    private bool stageThree;
+
     private bool stageOneisDone = false;
+    private bool stageTwoisDone = false;
+    private bool stageThreeisDone = false;
 
     public GameObject[] pylonChecker;
 
+    private bool startTwoTimer;
+    private bool startThreeTimer;
 
-    private int stageTwoBossCount;
+    private float stageTwoBossCount;
     private int pylonCount;
     private bool isPylonEmpty;
+
+    private float stageThreeBossCount;
+
+    public GameObject endPortal;
+
+    public GameObject particleInstantiation;
 
     void Awake()
     {
@@ -39,12 +51,14 @@ public class BossAi : MonoBehaviour
         battleStart = false;
 
         stageTwo = false;
+        stageThree = false;
     }
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
 
-
+        startTwoTimer = false;
+        startThreeTimer = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -83,33 +97,88 @@ public class BossAi : MonoBehaviour
             Debug.Log("The Pylons defending the Bic are gone, starting stage two");
             BossStageTwo();
             stageTwo = false;
+
             stageOneisDone = true;
         }
-        
+
+        if (startTwoTimer == true && !stageTwoisDone)
+        {
+            stageTwoBossCount += Time.deltaTime;
+            Debug.Log("Boss Count timer = " + stageTwoBossCount);
+
+            if (stageTwoBossCount >= 17f)
+            {
+                stageThree = true;
+                BossStageThree();
+                stageThree = false;
+
+                stageTwoisDone = true;
+                Debug.Log("15 seconds has passed within Stage two. Starting end");
+            }
+        }
+
+        if (startThreeTimer == true && !stageThreeisDone)
+        {
+            stageThreeBossCount += Time.deltaTime;
+            Debug.Log("Stage Three Boss Count Timer = " + stageThreeBossCount);
+            //InvokeRepeating("BossRoar", 0, 2); //calls BossRoar every 2 seconds
+            
+            if (stageThreeBossCount >= 15f)
+            {
+                ActivateEndPortal();
+
+
+                stageThreeisDone = true;
+                Debug.Log("The Bic is defeated! You Win!");
+            }
+        }
     }
 
 
-    private void BossStageTwo()
+
+
+
+     private void BossStageTwo()
     {
         Debug.Log("The Boss has entered stage two");
         if (stageTwo == true)
         {
             audioSource.PlayOneShot(bossRoar, 0.7f);
-            stageTwoBossCount = 0;
-            startTimeBtwShots = 2.5f;
-            stageTwoBossCount++;
-            Debug.Log("Boss Count timer = " + stageTwoBossCount);
             
-            if (stageTwoBossCount == 15)
-            {
-                Debug.Log("15 seconds has passed within Stage two. Starting end");
-            }
+            startTimeBtwShots = 2.5f;
+            startTwoTimer = true;
+
 
         }
 
     }
 
+     void BossStageThree()
+    {
+        
+        Debug.Log("The boss has entered stage three");
+        if (stageThree == true)
+        {
+            audioSource.PlayOneShot(bossRoar, 1.0f);
 
+            startTimeBtwShots = 1.25f;
+            startThreeTimer = true;
+        }
+
+
+    }
+
+    private void ActivateEndPortal()
+    {
+        endPortal.SetActive(true);
+        Debug.Log("The End Portal is now active. You may leave this place now");
+
+        GameObject partic = Instantiate(particleInstantiation, transform.position, transform.rotation);
+        GetComponent<ParticleSystem>().Play();
+
+        Destroy(GameObject.FindWithTag("Enemy"));
+        Destroy(partic, 3);
+    }
 
 
 
