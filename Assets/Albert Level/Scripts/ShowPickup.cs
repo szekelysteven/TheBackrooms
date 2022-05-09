@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShowPickup : MonoBehaviour
 {
-    Rect rect;
+  /*  Rect rect;
     Texture;
         //use this for initialization
         void Start {Rect is=new Rect( ,)
@@ -15,3 +15,5 @@ public class ShowPickup : MonoBehaviour
         float size = Screen.width * 0.1f;
         rect = new Rext(Screen.width2 - size / 2, Screen.height * 0.7f,, size, size);
         texture = Resources.Load  ("KeyCard/Motel3A") as Texture;
+  */
+  }
