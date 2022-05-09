@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35c987bdcbe114546a527424b30fcff3, type: 3}
-  m_Name: EndScene
+  m_Name: EndScene2
   m_EditorClassIdentifier: 
   sentences:
-  - text: On March 15th, 2018 A large explosion was reported in the Cineworth Valley
-      area at around 0300 hours. Along with was reported as a loud cry that could
-      be heard three towns over. When officials arrived the entire town was destroyed.
+  - text: Not a person could be found among the wreckage. I an avid listener to The
+      Conspiracy Show With Gregg Garcia knew the cover-up that was incoming. I drove
+      12 hours to sneak onto the property to find answers.
     speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}
   background: {fileID: 21300000, guid: 7c8729ffa0eb5774a9990d882198496f, type: 3}
   nextScene: {fileID: 0}
