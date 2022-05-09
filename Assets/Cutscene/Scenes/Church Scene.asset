@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Church Scene
   m_EditorClassIdentifier: 
   sentences:
-  - sentences: []
-    text: 'I woke up with a bruise on my forehead and my gun missing. That shop keeper
+  - text: 'I woke up with a bruise on my forehead and my gun missing. That shop keeper
       really did a number on me.... I am in a church..... Not sure why they brought
       me here, but I need to escape. '
     speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}

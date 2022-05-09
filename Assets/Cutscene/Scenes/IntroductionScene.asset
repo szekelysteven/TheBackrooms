@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: IntroductionScene
   m_EditorClassIdentifier: 
   sentences:
-  - sentences: []
-    text: 'This is  the last known footage of Gregg Garcia. A conspriacy theorist
+  - text: 'This is  the last known footage of Gregg Garcia. A conspriacy theorist
       who has gone missing in the small town of Cineworth Valley. This game recounts
       Case file #138. This investigation was conducted by Private Investigator Casey
       Flynn. All of the following were recovered from the remains of Cineworth Valley.  '

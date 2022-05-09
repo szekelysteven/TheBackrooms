@@ -13,18 +13,15 @@ MonoBehaviour:
   m_Name: EndScene
   m_EditorClassIdentifier: 
   sentences:
-  - sentences: []
-    text: On March 15th, 2018 A large explosion was reported in the Cineworth Valley
+  - text: On March 15th, 2018 A large explosion was reported in the Cineworth Valley
       area at around 0300 hours. Along with was reported as a loud cry that could
       be heard three towns over. When officials arrived the entire town was destroyed.
     speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}
-  - sentences: []
-    text: Not a person could be found among the wreckage. I an avid listener to The
+  - text: Not a person could be found among the wreckage. I an avid listener to The
       Conspiracy Show With Gregg Garcia knew the cover-up that was incoming. I drove
       12 hours to sneak onto the property to find answers.
     speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}
-  - sentences: []
-    text: 'After spending hours and nearly giving up I found a tattered journal inside
+  - text: 'After spending hours and nearly giving up I found a tattered journal inside
       what remains of the graveyard. It contained the truth of what went down that
       night. This is the story I have released to you now within its entirety.  '
     speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}

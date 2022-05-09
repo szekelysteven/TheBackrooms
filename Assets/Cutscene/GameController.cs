@@ -16,13 +16,24 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) 
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) 
         {
-            Debug.Log("Mouse Clicked"); ///ensure that the mouse is indeed active and playing
+            Debug.Log("Mouse Clicked or Space Bar Pressed"); ///ensure that the mouse is indeed active and playing
             if(bottomBar.IsCompleted())
             {
-                bottomBar.PlayNextSentence(); // once the mouse is clicked this advance into the next screen. 
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //loads the next scene in the build index after the player clicks on the last sentence. 
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                if (bottomBar.IsLastSentence())
+                {
+                    currentScene = currentScene.nextScene;
+                    //bottomBar.PlayNextSentence(); // once the mouse is clicked this advance into the next screen. 
+                    bottomBar.PlayScene(currentScene);
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //loads the next scene in the build index after the player clicks on the last sentence. 
+                }
+                else
+                {
+                    bottomBar.PlayNextSentence();
+                }
+
             }
                     
         }

@@ -13,7 +13,7 @@ public class StoryScene : ScriptableObject
     public struct Sentence
     { // allows the scene to displays sentences along with who is speaking.
 
-        public List<Sentence> sentences;
+
         public string text; 
         public Speaker speaker;
     }

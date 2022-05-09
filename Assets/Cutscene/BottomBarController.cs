@@ -7,14 +7,16 @@ public class BottomBarController : MonoBehaviour
 {
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
+
     private int sentenceIndex = -1; 
-    public StoryScene currentScene;
+    private StoryScene currentScene;
     private State state = State.COMPLETED; 
 
 
     private enum State
     {
-        PLAYING, COMPLETED
+        PLAYING,
+        COMPLETED
     }
    
     public void PlayScene(StoryScene scene) // plays the current scene
@@ -31,11 +33,16 @@ public class BottomBarController : MonoBehaviour
     }
 
     public bool IsCompleted()
-
     {
         return state == State.COMPLETED; /// once the scene is completed it will return to a completed state.  
     }
-   private IEnumerator TypeText(string text) // this creates a typing effect on the scene. 
+
+    public bool IsLastSentence()
+    {
+        return sentenceIndex + 1 == currentScene.sentences.Count;
+    }
+
+    private IEnumerator TypeText(string text) // this creates a typing effect on the scene. 
     {
         barText.text = "";
         state = State.PLAYING;
@@ -52,4 +59,5 @@ public class BottomBarController : MonoBehaviour
             }
         }
     }
+
 }
