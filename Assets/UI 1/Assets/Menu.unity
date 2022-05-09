@@ -341,7 +341,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 422976723}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: LoadGandM
+        m_MethodName: LoadSubwayLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
