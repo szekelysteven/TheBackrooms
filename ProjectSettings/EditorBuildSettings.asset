@@ -48,6 +48,9 @@ EditorBuildSettings:
     path: Assets/Cutscene/Actual Scenes/End Scene 3.unity
     guid: 6a2936e32d769e3438fbfa2bc41145c3
   - enabled: 1
+    path: Assets/Cutscene/Actual Scenes/End Credit.unity
+    guid: 7b2f4190b46e82445b8b8e97e6feb5d3
+  - enabled: 1
     path: Assets/UI 1/Assets/DebugScene.unity
     guid: e31adf811ed7c634d82a7341b30dde73
   - enabled: 0
