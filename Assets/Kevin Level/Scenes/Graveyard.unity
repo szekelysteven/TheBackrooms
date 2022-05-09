@@ -3094,7 +3094,7 @@ PrefabInstance:
     - target: {fileID: 3795825120848776033, guid: 9fbe555f5c62947c8a5ba55354188796,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3795825120848776033, guid: 9fbe555f5c62947c8a5ba55354188796,
         type: 3}
@@ -5320,7 +5320,7 @@ GameObject:
   - component: {fileID: 794373573}
   - component: {fileID: 794373572}
   m_Layer: 0
-  m_Name: Terrain
+  m_Name: GraveyardTerrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17335,7 +17335,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f306a85debd11254494408c2235854be,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f306a85debd11254494408c2235854be,
         type: 3}
