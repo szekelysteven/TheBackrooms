@@ -6193,6 +6193,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 442930814, guid: b868f39b57398eb419179658c8486daf, type: 3}
+      propertyPath: powered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 442930814, guid: b868f39b57398eb419179658c8486daf, type: 3}
+      propertyPath: flashlightTurnedOn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5869098931317644194, guid: b868f39b57398eb419179658c8486daf, type: 3}
       propertyPath: m_RootOrder
       value: 0
