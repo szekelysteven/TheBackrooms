@@ -7,6 +7,7 @@ TagManager:
   - Flashlight
   - Enemy
   - Pylon
+  - MovingTrain
   layers:
   - Default
   - TransparentFX
