@@ -7,29 +7,27 @@ public class KeyHolder : MonoBehaviour
 
     private List<Key.KeyType> keyList;
 
-    public AudioSource audioSource;
-    public AudioClip keyPickupClip;
-    public AudioClip keyUsedClip;
+
 
 
     private void Awake()
     {
         keyList = new List<Key.KeyType>();
 
-        audioSource = GetComponent<AudioSource>();
+
 
     }
 
     public void AddKey(Key.KeyType keyType)
     {
         Debug.Log("Added Key: " + keyType);
-        audioSource.PlayOneShot(keyPickupClip, 0.7f);
+
         keyList.Add(keyType);
     }
 
     public void UseKey(Key.KeyType keyType)
     {
-        audioSource.PlayOneShot(keyUsedClip, 0.7f);
+
         keyList.Remove(keyType);
     }
     
