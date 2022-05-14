@@ -196,7 +196,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -510,7 +510,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barText: {fileID: 1964265169}
   personNameText: {fileID: 1756656663}
-  currentScene: {fileID: 11400000, guid: a537d0bea942c3d42a4a761de632f066, type: 2}
 --- !u!1 &1343380335
 GameObject:
   m_ObjectHideFlags: 0
