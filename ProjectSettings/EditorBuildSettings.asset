@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Cutscene/Actual Scenes/IntroCutscene.unity
     guid: 40b0baf6d6f6f294e945f40c204a0bff
   - enabled: 1
+    path: Assets/Cutscene/Actual Scenes/IntroCutscene2.unity
+    guid: 26ae48ecd93917c49bbb30d702a0e153
+  - enabled: 1
     path: Assets/Kevin Level/Scenes/Grace&Mercy.unity
     guid: e05f5f312ad5cf24f9a54959ee21ee16
   - enabled: 1

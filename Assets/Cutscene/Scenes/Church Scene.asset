@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - text: 'Garcia''s body was in the freezer. God knows how long he has been dead....
-      A note on his body told me to investigate the church. He was right all along 
-      this town has summoned somehting evil. Whatever it is it resides on the churches
+      A note on his body told me to investigate the church. He was right all along
+      this town has summoned something evil. Whatever it is it resides on the churches
       property. '
     speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}
   background: {fileID: 21300000, guid: 7c8729ffa0eb5774a9990d882198496f, type: 3}

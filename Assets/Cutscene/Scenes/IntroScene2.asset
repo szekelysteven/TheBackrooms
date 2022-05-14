@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c987bdcbe114546a527424b30fcff3, type: 3}
+  m_Name: IntroScene2
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: 'This is Private investigator Casey Flynn. I have been offered a missing
+      person''s case. His name is Gregg Garcia, a 38 year old man who runs a conspiracy
+      theory podcast. For months hes been claiming to reveal the truth about Cineworth
+      Valley. Gregg claims the town is trying to summon an angel or something. Sounds
+      like a bunch of fairy tales to me. He frequently shopped at the Grace and Mercy
+      store. My best bet is to start there. '
+    speaker: {fileID: 11400000, guid: c6f9408d07e52ca47921f2c85e0d3aa8, type: 2}
+  background: {fileID: 21300000, guid: 7c8729ffa0eb5774a9990d882198496f, type: 3}
+  nextScene: {fileID: 0}
