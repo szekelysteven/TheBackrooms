@@ -29,7 +29,15 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("UndergroundLevel");
     }
-    
+    public void LoadChurchLevel()
+    {
+        SceneManager.LoadScene("Walderhaug Albert_Church");
+    }
+    public void LoadGraveyardLevel()
+    {
+        SceneManager.LoadScene("Graveyard");
+    }
+
     public void LoadMenu()
     {
         SceneManager.LoadScene("Menu");
