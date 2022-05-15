@@ -41,7 +41,7 @@ public class HitEffect : MonoBehaviour
     public void SimulateHit()
     {
         alpha += .3F;
-        timePoint = currentTime + .3f;
+        timePoint = currentTime + 5;
         red = 255;
     }
 }

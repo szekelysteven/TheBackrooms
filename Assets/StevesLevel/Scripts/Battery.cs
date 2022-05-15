@@ -21,7 +21,7 @@ public class Battery : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            GameObject.Find("Flashlight").GetComponent<Flashlight>().batteryLife += 15;
+            GameObject.Find("Flashlight").GetComponent<Flashlight>().batteryLife += 5;
            
             //plays sounds attached to battery
             GetComponent<AudioSource>().Play();
