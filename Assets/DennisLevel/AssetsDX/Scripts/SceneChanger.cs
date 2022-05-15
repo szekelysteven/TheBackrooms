@@ -57,4 +57,8 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(buildIndexNumber);
     }
+    public void QuitButton()
+    {
+        Application.Quit();
+    }
 }

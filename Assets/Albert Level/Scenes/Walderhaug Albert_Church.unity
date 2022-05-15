@@ -1200,8 +1200,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.3281958, z: 1.2152646}
-  m_Center: {x: 1.0170292e-11, y: 0.664099, z: 0.107632436}
+  m_Size: {x: 10.636998, y: 2.3281956, z: 1.2152646}
+  m_Center: {x: 4.214957, y: 0.6640992, z: 0.10763445}
 --- !u!23 &141220798
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2236,7 +2236,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh16154722
+  m_Name: pb_Mesh1470226
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4970,8 +4970,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.3281958, z: 1.2152646}
-  m_Center: {x: 1.0170292e-11, y: 0.664099, z: 0.107632436}
+  m_Size: {x: 10.52463, y: 2.3281956, z: 1.2152646}
+  m_Center: {x: 4.2392583, y: 0.6640992, z: 0.10763371}
 --- !u!23 &700052021
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6251,7 +6251,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1569290
+  m_Name: pb_Mesh-973910
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15888,7 +15888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1339614649075759354, guid: 2d9d700a298af43439199d0943dccc32, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1863527899867488832, guid: 2d9d700a298af43439199d0943dccc32, type: 3}
       propertyPath: m_RootOrder
@@ -17719,6 +17719,115 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &1984875625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1984875630}
+  - component: {fileID: 1984875629}
+  - component: {fileID: 1984875628}
+  - component: {fileID: 1984875627}
+  - component: {fileID: 1984875626}
+  m_Layer: 0
+  m_Name: Graveyard (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1984875626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984875625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6d13bdc8bb57784d897f59e6809c74e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Walderhaug Albert_ Church
+--- !u!65 &1984875627
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984875625}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.63545495, y: 2.3281956, z: 7.4305325}
+  m_Center: {x: 0.21655118, y: 0.6640992, z: 0.5712959}
+--- !u!23 &1984875628
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984875625}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1984875629
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984875625}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1984875630
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984875625}
+  m_LocalRotation: {x: -0.00060967426, y: 0.008488647, z: -0.0019352542, w: 0.9999619}
+  m_LocalPosition: {x: 60, y: 4.332, z: 3.9999998}
+  m_LocalScale: {x: 3.5109131, y: 0.20287, z: 1.7119066}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 136
+  m_LocalEulerAnglesHint: {x: -0.068, y: 0.973, z: -0.222}
 --- !u!1001 &2060661228
 PrefabInstance:
   m_ObjectHideFlags: 0
