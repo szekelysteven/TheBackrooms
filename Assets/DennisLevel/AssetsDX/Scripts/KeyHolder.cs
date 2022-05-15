@@ -55,6 +55,15 @@ public class KeyHolder : MonoBehaviour
                 keyDoor.OpenDoor();
             }
         }
+        KeyDoorUnlock keyDoorUnlock = other.GetComponent<KeyDoorUnlock>();
+        if (keyDoorUnlock != null)
+        {
+            if (ContainsKey(keyDoorUnlock.GetKeyType()))
+            {
+                UseKey(keyDoorUnlock.GetKeyType());
+                keyDoorUnlock.OpenDoor();
+            }
+        }
     }
 
 }

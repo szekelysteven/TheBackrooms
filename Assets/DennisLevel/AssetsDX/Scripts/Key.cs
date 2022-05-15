@@ -11,7 +11,9 @@ public class Key : MonoBehaviour
     {
         Red,
         Green,
-        Blue
+        Blue,
+        Brass,
+        Card
     }
 
     public KeyType GetKeyType()
